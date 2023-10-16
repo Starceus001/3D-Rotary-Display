@@ -11,8 +11,10 @@
 #include "esp_ota_ops.h"
 #include "esp_partition.h"
 
+// <<<<<<<<<<<<<<<<<<<<<<<< function not working, look into finding different code for ota flashing!!
 void ota_task(void *pvParameters) {
     // Define variables for OTA
+    char TAG = "TEST";
     const esp_partition_t *ota_partition = esp_ota_get_next_update_partition(NULL);
     esp_ota_handle_t ota_handle;
     esp_err_t ota_result = esp_ota_begin(ota_partition, OTA_SIZE_UNKNOWN, &ota_handle);
