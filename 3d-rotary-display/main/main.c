@@ -5,4 +5,12 @@
 // 
 // Opdrachtgever - NHL Stenden Hogeschool, Leeuwarden
 // ------------------------------------------
+// Main code file
+// ------------------------------------------
 
+#include <stdio.h>
+
+void app_main(void)
+{
+    
+}
