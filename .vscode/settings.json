@@ -11,8 +11,17 @@
     "idf.openOcdConfigs": [
         "board/esp32-wrover-kit-3.3v.cfg"
     ],
-    "idf.portWin": "COM6",
+    "idf.portWin": "COM4",
     "idf.pythonBinPathWin": "C:\\Users\\Guido\\.espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "C:\\Users\\Guido\\.espressif",
-    "C_Cpp.default.compilerPath": "cl.exe"
+    "C_Cpp.default.compilerPath": "cl.exe",
+    "files.associations": {
+        "stdio.h": "c",
+        "task.h": "c",
+        "main.h": "c",
+        "esp_http_server.h": "c",
+        "esp_event.h": "c",
+        "freertos.h": "c",
+        "event_groups.h": "c"
+    }
 }

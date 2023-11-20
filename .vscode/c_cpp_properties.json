@@ -4,11 +4,14 @@
             "name": "ESP-IDF",
             "compilerPath": "c:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
             "includePath": [
-                "${config:idf.espIdfPath}/components/**",
+                "${config:idf.espIdfPath}/components**",
                 "${config:idf.espIdfPathWin}/components/**",
                 "${config:idf.espAdfPath}/components/**",
                 "${config:idf.espAdfPathWin}/components/**",
-                "${workspaceFolder}/**"
+                "C:/Users/Guido/esp/esp-idf/components/lwip/lwip/src/include",
+                "C:/Users/Guido/esp/esp-idf/components/linux/include",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/main"
             ],
             "browse": {
                 "path": [
@@ -16,7 +19,8 @@
                     "${config:idf.espIdfPathWin}/components",
                     "${config:idf.espAdfPath}/components/**",
                     "${config:idf.espAdfPathWin}/components/**",
-                    "${workspaceFolder}"
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/main"
                 ],
                 "limitSymbolsToIncludedHeaders": false
             }
