@@ -31,5 +31,10 @@ void app_main(void)
         vTaskDelay(100);
 
         // extend with further infinitely looped main functions...
+
+        // check if wifi connected, if not, do connect
+        // if (is_wifi_connected()) {
+            // look into
+        // }
     }
 }
