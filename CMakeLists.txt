@@ -4,8 +4,6 @@ cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
-# Add python (look into espressif IDF extention information for the version)
-
 project(3d-rotary-display)
 
 idf_component_register(SRCS "main.c"
