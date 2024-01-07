@@ -22,7 +22,10 @@
         "esp_http_server.h": "c",
         "esp_event.h": "c",
         "freertos.h": "c",
-        "event_groups.h": "c"
+        "event_groups.h": "c",
+        "esp_wifi.h": "c",
+        "esp_wifi_default.h": "c",
+        "esp_netif.h": "c"
     },
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
 }

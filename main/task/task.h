@@ -20,8 +20,12 @@
 #include <freertos/task.h>
 #include <esp_err.h>
 #include <esp_log.h>
-#include <esp_wifi.h>           // "TEST" TO DO
-#include <tcpip_adapter.h>      // "TEST" TO DO
+#include <esp_wifi.h>
+#include <esp_netif.h>
+// #include <tcpip_adapter.h>      // "TEST" NOT WORKING! trying something else!
+
+#define WIFI_SSID "Huize Pino's"              // "TEST" TO DO (Vraag Hendrik bijlsma)
+#define WIFI_PASSWORD "Fuck_You_2023!"      // "TEST" TO DO (Vraag Hendrik bijlsma)
 
 extern esp_err_t ota_init(void *pvParameter);
 

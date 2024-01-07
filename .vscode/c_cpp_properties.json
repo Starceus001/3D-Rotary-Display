@@ -2,16 +2,21 @@
     "configurations": [
         {
             "name": "ESP-IDF",
-            "compilerPath": "c:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+            // "compilerPath": "c:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe",
+            "compilerPath": "C:\\Users\\Guido\\.espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\bin\\xtensa-esp32-elf-gcc.exe",
             "includePath": [
-                "${config:idf.espIdfPath}/components**",
+                "${config:idf.espIdfPath}/components/**",
                 "${config:idf.espIdfPathWin}/components/**",
                 "${config:idf.espAdfPath}/components/**",
                 "${config:idf.espAdfPathWin}/components/**",
+                "${workspaceFolder}/build/config",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/main",
                 "C:/Users/Guido/esp/esp-idf/components/lwip/lwip/src/include",
                 "C:/Users/Guido/esp/esp-idf/components/linux/include",
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/main"
+                "C:/Users/Guido/esp/esp-idf/components/spi_flash/sim/stubs/spi_flash",
+                "C:/Users/Guido/esp/esp-idf/components/esp_partition/include",
+                "C:/Users/Guido/esp/esp-idf/components/**"
             ],
             "browse": {
                 "path": [
@@ -20,7 +25,8 @@
                     "${config:idf.espAdfPath}/components/**",
                     "${config:idf.espAdfPathWin}/components/**",
                     "${workspaceFolder}",
-                    "${workspaceFolder}/main"
+                    "${workspaceFolder}/main",
+                    "C:/Users/Guido/esp/esp-idf/components/**"
                 ],
                 "limitSymbolsToIncludedHeaders": false
             }
@@ -28,3 +34,36 @@
     ],
     "version": 4
 }
+
+
+
+
+
+// {
+//     "configurations": [
+//         {
+//             "name": "ESP-IDF",
+//             "compilerPath": "C:\\Users\\Guido\\.espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\bin\\xtensa-esp32-elf-gcc.exe",
+//             "includePath": [
+//                 "${config:idf.espIdfPath}/components/**",
+//                 "${config:idf.espIdfPathWin}/components/**",
+//                 "${config:idf.espAdfPath}/components/**",
+//                 "${config:idf.espAdfPathWin}/components/**",
+//                 "${workspaceFolder}/build/config",
+//                 "${workspaceFolder}/**",
+//                 "${workspaceFolder}/main"
+//             ],
+//             "browse": {
+//                 "path": [
+//                     "${config:idf.espIdfPath}/components",
+//                     "${config:idf.espIdfPathWin}/components",
+//                     "${config:idf.espAdfPath}/components/**",
+//                     "${config:idf.espAdfPathWin}/components/**",
+//                     "${workspaceFolder}"
+//                 ],
+//                 "limitSymbolsToIncludedHeaders": false
+//             }
+//         }
+//     ],
+//     "version": 4
+// }
